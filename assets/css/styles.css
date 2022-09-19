@@ -1,2 +1,228 @@
+.main {
+  margin: auto;
+  width: 80%;
+}
+
+
+.hair {
+  position: absolute;
+  background: black;
+  z-index: 1;
+}
+.side-l{
+  width:39px;
+  height:149px;
+  top:144px;
+  left:211.7px;
+  border-radius: 53px;
+  transform: rotate(-5deg);
+}
+.side-r{
+  width:39px;
+  height:149px;
+  top:144px;
+  left:419px;
+  border-radius: 53px;
+  transform: rotate(5deg);
+}
+.top{
+  width:121px;
+  height:110px;
+  top:90px;
+  left:187px;
+  border-radius: 67px;
+}
+.forehead{
+  width:164px;
+  height:94px;
+  top:142px;
+  left:237px;
+  border-radius: 50px;
+  z-index: 3;
+}
+.skin{
+  position: absolute;
+  background: #F5BA83;
+  z-index: 2;
+}
+.skull{
+  width:213px;
+  height:284px;
+  top:153px;
+  left:229px;
+  border-radius: 80px;
+}
+.ear-l{
+  width:14px;
+  height:41px;
+  top:256px;
+  left:214px;
+  border-radius: 7px;
+  transform: rotate(-4deg);
+}
+.ear-r{
+  width:14px;
+  height:41px;
+  top:256px;
+  left:443px;
+  border-radius: 7px;
+  transform: rotate(4deg);
+}
+.glasses{
+  position: absolute;
+  background: #DDDBDB;
+  width:86px;
+  height:81px;
+  top:247px;
+  border-radius: 48px;
+  z-index: 10;
+}
+.glasses-bridge{
+  position: absolute;
+  background: #DDDBDB;
+  width:19px;
+  height:5px;
+  top:285px;
+  left: 326px;
+  z-index: 10;
+}
+.glasses-ref{
+  position: absolute;
+  background: #FFFFFF;
+  width:7px;
+  height:69px;
+  top:248px;
+  z-index: 11;
+  transform: rotate(28deg);
+}
+.eyebrow-l{
+  position: absolute;
+  width:50px;
+  height:13px;
+  left:263px;
+  border-radius: 11px;
+  z-index:4;
+  transform: rotate(14deg);
+}.eyebrow-r{
+  position: absolute;
+  width:50px;
+  height:13px;
+  left: 365px;
+  z-index:4;
+  border-radius: 11px;
+}
+.dark{
+  position: absolute;
+  background:#C9A788 ;
+  z-index: 7;
+}
+.nose{
+  width:18.5px;
+  height:10px;
+  left:320px;
+}
+.nose-shadow{
+  width: 8px;
+  height:2px;
+
+  top: 356px;
+  border-radius: 35px ;
+}
+.mole{
+  height:3px;
+  width: 3px;
+  top: 372px;
+  left: 352px;
+  border-radius: 7px ;
+}
+.mouth{
+  position: absolute;
+  background: #FFDDBE;
+  width:27px;
+  height:4.5px;
+  top:386px;
+  left: 318px;
+  z-index: 13;
+  border-radius: 8px ;
+}
+.chin{
+  width:85px;
+  height:36px;
+  top:404px;
+  left: 293px;
+  z-index: 1;
+  border-radius: 8px ;
+  box-shadow: 0px 2px 10px #C28146;
+}
+.neck{
+  width:139px;
+  height:190px;
+  top:409px;
+  left: 266px;
+  z-index: 0;
+  position: absolute;
+  background: #ED9D53;
+}
+.shirt-l{
+  position: absolute;
+  background: #850000;
+  width:113px;
+  height:156px;
+  top:475px;
+  left: 187px;
+  transform: rotate(50deg);
+}
+.shirt-r{
+  position: absolute;
+  background: #850000;
+  width:113px;
+  height:156px;
+  top:475px;
+  left: 372px;
+  transform: rotate(-50deg);
+}
+.shirt{
+  position: absolute;
+  background: #850000;
+  width:446px;
+  height:150px;
+  top:505px;
+  left: 109px;
+  border-radius: 75px;
+}
+@keyframes color{
+  0% {background-color: #850000}
+  25% {background-color: #005585}
+  50% {background-color:#620085 }
+  75% {background-color:#186A2F }
+  100% {background-color:#850000 }
+}
+#bg-anim{
+  animation: color 10s infinite;
+}
+@keyframes move-glass {
+  0% {top: 0px}
+  100% {top: 247px;}
+}
+
+#move-glass{
+  animation: move-glass 5s 1;
+}
+@keyframes move-ref {
+  0% {top: 0px}
+  100% {top: 248px;}
+}
+
+#move-ref{
+  animation: move-ref 5s 1;
+}
+@keyframes move-bridge {
+  0% {top: 0px}
+  100% {top: 285px;}
+}
+
+#move-bridge{
+  animation: move-bridge 5s 1;
+}
 
 /* css */
